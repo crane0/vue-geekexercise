@@ -3,6 +3,10 @@
     <p>Reversed message1: "{{ reversedMessage1 }}"</p>
     <p>Reversed message2: "{{ reversedMessage2() }}"</p>
     <p>{{ now }}</p>
+<<<<<<< HEAD
+=======
+    <!-- $forceUpdate()强制重新 render -->
+>>>>>>> 6c34fe6436a46320f6573ec721cffb6b19e4ebb4
     <button @click="() => $forceUpdate()">forceUpdate</button>
     <br />
     <input v-model="message" />

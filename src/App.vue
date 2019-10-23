@@ -5,8 +5,7 @@
 </template>
 
 <script>
-// import Hello from './components/1.3'
-import Hello from './components/1.4'
+import Hello from './components/1.1_a'
 
 export default {
   name: 'app',

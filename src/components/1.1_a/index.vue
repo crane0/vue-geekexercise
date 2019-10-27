@@ -68,7 +68,7 @@ export default {
     },
     handleEventChange(val, callback) {
       this.name = val;
-      callback("hello");
+      // callback("hello");
       return "hello";
     }
   }

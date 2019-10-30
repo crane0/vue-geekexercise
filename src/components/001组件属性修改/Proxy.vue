@@ -19,7 +19,6 @@ export default {
   },
   methods: {
     handleChange(e) {
-      console.log(this.info.name)
       // this.info.name = e.target.value;
       // this.$forceUpdate();
       this.$emit("change", e.target.value);

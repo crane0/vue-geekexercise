@@ -6,8 +6,8 @@
     <br />
     <br />
     <div @click="handleDivClick">
-      <button @click="handleClick">重置成功</button>&nbsp;&nbsp;&nbsp;
-      <button @click.stop="handleClick">重置失败</button>
+      <button>重置成功</button>
+      <button @click.stop>重置失败</button>
     </div>
   </div>
 </template>
@@ -28,10 +28,6 @@ export default {
     handleDivClick() {
       this.$emit("change", "");
     },
-    handleClick(e) {
-      // 都会失败
-      // e.stopPropagation();
-    }
   }
 };
 </script>

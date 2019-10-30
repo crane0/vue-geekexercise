@@ -4,9 +4,9 @@
       <a-tab-pane key="1" tab="习题1">
         <Proxy :info="info" @change="handleProxyChange" />
       </a-tab-pane>
-      <a-tab-pane key="2" tab="习题2">
+      <!-- <a-tab-pane key="2" tab="习题2">
         <Event :name="name" @change="handleEventChange" />
-      </a-tab-pane>
+      </a-tab-pane> -->
       <a-tab-pane key="3" tab="习题3">
         <h2>2.6 新语法</h2>
         <SlotDemo>
@@ -63,13 +63,13 @@ export default {
   methods: {
     handleProxyChange(val) {
       // window.isUpdatingChildComponent = true;
-      this.info.name = val;
+      // this.info.name = val;
       this.info = { name: val };
     },
     handleEventChange(val, callback) {
       this.name = val;
-      // callback("hello");
-      return "hello";
+      console.log(callback)
+      callback && callback("hello");
     }
   }
 };

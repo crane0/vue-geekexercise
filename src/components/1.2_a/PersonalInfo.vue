@@ -2,7 +2,6 @@
   <div>
     <select
       :value="phoneInfo.areaCode"
-      placeholder="区号"
       @change="handleAreaCodeChange"
     >
       <option value="+86">+86</option>
@@ -34,7 +33,6 @@ export default {
   props: {
     phoneInfo: Object,
     zipCode: String,
-    required: Boolean,
     message: String,
     validate: Function
   },
